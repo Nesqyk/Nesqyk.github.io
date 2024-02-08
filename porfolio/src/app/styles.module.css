@@ -1,0 +1,22 @@
+@keyframes textureAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.animatedContainer {
+    position: relative;
+    overflow: hidden;
+}
+
+.text {
+    font-size: 2em;
+    background-image: linear-gradient(45deg, #f06, #9f6, #f06);
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: textureAnimation 2s linear infinite;
+}

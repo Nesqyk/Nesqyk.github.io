@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+@keyframes textureAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.animatedContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.text {
+  font-size: 2em;
+  background-image: linear-gradient(45deg, #d5d5d5, #757575);
+  background-size: 200% 200%;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: textureAnimation 2s infinite;
+}
