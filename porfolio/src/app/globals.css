@@ -8,7 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 0, 0, 0;
@@ -33,25 +33,3 @@ body {
 }
 
 
-@keyframes textureAnimation {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
-
-.animatedContainer {
-  position: relative;
-  overflow: hidden;
-}
-
-.text {
-  font-size: 2em;
-  background-image: linear-gradient(45deg, #d5d5d5, #757575);
-  background-size: 200% 200%;
-  color: transparent;
-  -webkit-background-clip: text;
-  animation: textureAnimation 2s infinite;
-}

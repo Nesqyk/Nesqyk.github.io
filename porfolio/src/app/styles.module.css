@@ -18,5 +18,5 @@
     background-size: 200% 200%;
     color: transparent;
     -webkit-background-clip: text;
-    animation: textureAnimation 2s linear infinite;
+    animation: textureAnimation 4s linear infinite;
 }
