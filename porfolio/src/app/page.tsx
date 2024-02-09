@@ -11,7 +11,7 @@ export default function Home() {
                   Who Am I?
               </h1>
               <p className="text-gray-600">
-                  &aposWho am I?&apos is a question with no definite answer.
+                  &apos;Who am I?&apos; is a question with no definite answer.
               </p>
           </div>
       </main>
