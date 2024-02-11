@@ -18,8 +18,8 @@ export default function Home() {
 
           </div>
           <div className="flex flex-col  ">
-              <h1 className="text-4xl font-bold mt-4 text-blue-100">Hello, I'm <span className="text-blue-500">Nesqyk</span></h1>
-              <p className="text-xl text-center mt-2 text-blue-100">A Filipino Pixel Artist / Student who is Interested in Tech Thing.</p>
+              <h1 className="text-4xl font-bold mt-4 text-blue-100">Hello, I am <span className="text-blue-500">Nesqyk</span></h1>
+              <p className="text-xl text-center mt-2 text-blue-100">A Filipino Pixel Artist / Student who is Interested in Techies.</p>
 
           </div>
       </div>
