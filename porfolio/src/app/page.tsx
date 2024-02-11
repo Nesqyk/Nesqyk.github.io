@@ -5,27 +5,25 @@ import styles from './styles.module.css';
 
 export default function Home() {
   return (
-      <main className="flex min-h-screen items-center justify-start p-10">
-          <div style={{ background: 'linear-gradient(to right, #333, #555)' }} className="absolute top-0 left-0 w-full h-20 flex ">
+      <div className="min-h-screen items-center flex justify-center">
+          <div id="navBar" className="flex justify-between p-5"></div>
+          <div className="flex flex-col items-right p-10">
               <Image
-                  src="https://github.com/nesqyk.png"  // Replace with the actual URL
-                  alt="Peach"
-                  width={100}  // Specify the width
-                  height={50}  // Specify the height
+                  src="https://github.com/nesqyk.png"
+                  alt="Profile Picture"
+                  width={250}
+                  height={200}
+                  className="rounded-full border-4 border-blue-100"
               />
-              <h1 className="text-3xl md:text-4xl lg:text-3xl text-white mb-4 p-4">
-                  Nesqyk
-              </h1>
-          </div>
-          <div className={styles.animatedContainer}>
-              <h1 className={styles.text}>
-                  Who Am I?
-              </h1>
-              <p className="text-gray-600">
-                  &apos;Who am I?&apos; is a question with no definite answer.
-              </p>
 
           </div>
-      </main>
-  );
+          <div className="flex flex-col  ">
+              <h1 className="text-4xl font-bold mt-4 text-blue-100">Hello, I'm <span className="text-blue-500">Nesqyk</span></h1>
+              <p className="text-xl text-center mt-2 text-blue-100">A Filipino Pixel Artist / Student who is Interested in Tech Thing.</p>
+
+          </div>
+      </div>
+      );
 }
+
+
