@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 export default function Home() {
   return (
       <div className="min-h-screen items-center flex justify-center">
-          <div id="navBar" className="flex justify-between p-5"></div>
+
           <div className="flex flex-col items-right p-10">
               <Image
                   src="https://github.com/nesqyk.png"
